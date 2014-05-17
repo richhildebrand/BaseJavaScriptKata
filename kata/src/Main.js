@@ -2,9 +2,12 @@ define(['Main'],
 function(Main) {
    'use strict';
 
-   var Main = function() { };
+   var Main = function(ourBoolean) 
+   { 
+      this.OurBoolean = ourBoolean;
+   };
 
-   Main.prototype.IsTrue = true;
+   Main.prototype.OurBoolean;
 
    return Main;
 });
